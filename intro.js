@@ -1,0 +1,10 @@
+let a=5;
+let b="str";
+let c='char';
+let d=[];
+let e=null;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);
+console.log(typeof e);

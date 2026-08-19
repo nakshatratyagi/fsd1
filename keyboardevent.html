@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            margin:200px 0 0 100px;
+            height:300px ;
+            width:300px;
+            background-color: aqua;
+            border-radius: 15px;
+            padding:25px;
+            background-color: green;
+            color: bisque;
+            box-shadow: 3px 3px 10px #000;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-size: 500%;
+            background-position: -1500px -500px;
+        }
+        p,input{
+            font-weight: 20px;
+        }
+        input{
+            width:300px;
+            border:1px solid #000;
+            border-radius: 0px;
+            background: #fff;
+            box-shadow: inset -3px 3px 10px #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1 id="h1">keyboard events</h1>
+        <p>onkeydown</p>
+        <input type="text" placeholder="enter your name" onkeydown="alert(this.value);" >
+        <p>on key up</p>
+        <input type="text" onkeyup="alert(this.value);">
+        <p>onkeypress</p>
+        <input type="text" onkeypress="alert(this.value);">
+    </div>
+    <form>
+        
+    </form>
+</body>
+</html>
