@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    .SUBMIT{
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="start">
+        <form onsubmit="openwindow(event)">
+            <h2>Enter Your Details</h2>
+            <p>Name:</p>
+            <input type="text" placeholder="Enter Your Name" required>
+            <p>Roll No:</p>
+            <input type="text" placeholder="Enter Your roll number" required>
+            <p>Section</p>
+            <input type="radio" name="section" required >SECTION A
+            <input type="radio" name="section" >SECTION B
+            <input type="radio"name="section" >SECTION C<br>
+            <button CLASS="SUBMIT">START QUIZ</button>
+        </form>
+
+    </div>
+</body>
+<script src="assignment1.js"></script>
+</html>
