@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f2f5ff;
+        }
+
+        .start {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: blue;
+        }
+
+        input[type="radio"] {
+            margin: 8px 5px 8px 0;
+        }
+
+        .SUBMIT {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .SUBMIT:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="start">
+        <form onsubmit="openwindow(event)">
+            <h2>Enter Your Details</h2>
+
+            <p>Name:</p>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <p>Roll No:</p>
+            <input type="text" placeholder="Enter Your Roll Number" required>
+
+            <p>Section:</p>
+            <input type="radio" name="section" required> SECTION A
+            <input type="radio" name="section"> SECTION B
+            <input type="radio" name="section"> SECTION C
+
+            <button class="SUBMIT">START QUIZ</button>
+        </form>
+    </div>
+
+    <script src="assign1.js"></script>
+
+</body>
+</html>
